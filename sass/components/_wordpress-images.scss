@@ -1,0 +1,86 @@
+/* =============================================================
+	WORDPRESS IMAGE CLASSES
+	Styling for the classes WordPress automatically applies to images.
+	These styles are NOT included in the Kraken boilerplate.
+	(You'll probably want to include these later in the stylesheet.)
+ * ============================================================= */
+
+/*  Comment Avatar Styling
+ *  Class automatically applied to comment avatars. */
+.avatar {
+	float: left;
+	margin-right: calc-em(8px);
+	/*  Set $size to 2x desired size in comments.php
+	 *  for crisp images on retina screens. */
+	height: 3.75em;
+	width: 3.75em;
+}
+
+/* Full Bleed Images */
+.img-fullbleed {
+	width: 100%;
+	height: auto;
+}
+
+.img-franks {
+	max-width: calc-em(150px);
+	max-height: calc-em(150px);
+	height: auto;
+	width: auto;
+}
+
+/* Tiled Image Galleries */
+.tiled-gallery .tiled-gallery-item a {
+	pointer-events: none;
+	cursor: default;
+}
+
+.tiled-gallery-caption a {
+	pointer-events: auto !important;
+	cursor: pointer !important;
+}
+
+/*  Display all images as centered block elements.
+ *  Mobile-first default styling. */
+.alignleft,
+.alignright,
+.aligncenter,
+.alignnone {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: $spacing;
+}
+
+/*  Image Caption Styling */
+.wp-caption-text {
+	font-size: calc-em(15px);
+	font-style: italic;
+	color: $color-gray-dark;
+	padding-top: calc-em(8px);
+	text-align: center;
+}
+
+@media (min-width: $bp-small) {
+
+	/*  On bigger screens, float .alignleft images
+	 *  to the left with a slight margin-right. */
+	.alignleft {
+		float: left;
+		margin-right: calc-em(19px);
+	}
+
+	/*  On bigger screens, float .alignright images
+	 *  to the right with a slight margin-left. */
+	.alignright {
+		float: right;
+		margin-left: calc-em(19px);
+	}
+
+	/*  On bigger screens, remove left and right margins from .alignnone */
+	.alignnone {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

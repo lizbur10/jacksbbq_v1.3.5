@@ -1,0 +1,46 @@
+/* =============================================================
+	WORDPRESS COMMENT STYLES
+	Styles for WordPress comment forms.
+ * ============================================================= */
+
+.line-nested {
+	display: none;
+	visibility: hidden;
+}
+
+@media (min-width: $bp-small) {
+	.comment-nested {
+		padding-left: calc-em(64px);
+	}
+
+	.line-nested {
+		display: block;
+		visibility: visible;
+	}
+}
+
+#submit {
+	@extend .btn;
+	@extend .input-inline;
+}
+
+#cancel-comment-reply-link {
+	font-size: .785em;
+	text-transform: none;
+}
+
+.contact-submit input {
+	@extend .btn;
+	@extend .input-inline;
+}
+
+.grunion-field-label span {
+	// @extend .text-small;
+	// @extend .text-muted;
+	display: none;
+	visibility: hidden;
+}
+
+// .grunion-field-label span:before {
+// 	content: "\0020";
+// }

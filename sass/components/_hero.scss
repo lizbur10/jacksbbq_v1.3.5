@@ -1,0 +1,33 @@
+/* =============================================================
+
+	Hero v3.0
+	Simple callout boxes and background colors by Chris Ferdinandi.
+	http://gomakethings.com
+
+	Free to use under the MIT License.
+	http://gomakethings.com/mit/
+
+ * ============================================================= */
+
+.hero {
+	background-color: $color-gray-light;
+	margin-bottom: $spacing;
+	padding: calc-em(24px);
+	// border: calc-em(1px) solid darken( $color-gray-light, 7% );
+	border-radius: calc-em(1px);
+	box-shadow: 4px 4px 4px 0px rgba(204,204,204,0.75);
+}
+
+.hero hr {
+	margin: 0 calc-em(-24px) calc-em(21px);
+	border-top: calc-em(4px) solid $color-primary;
+	border-bottom: 0 solid $color-gray-light;
+}
+
+.hero .line-secondary {
+	border-top: calc-em(4px) solid $color-secondary;
+}
+
+.hero-condensed {
+	padding: calc-em(15px);
+}
