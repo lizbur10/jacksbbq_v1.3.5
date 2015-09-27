@@ -165,7 +165,7 @@ a:active {
 /*  Mobile-first. Single-column layout by default
  *  Container sets the maximum page width. Adjust as needed. */
 .container {
-  max-width: 60em;
+  max-width: 70em;
   width: 88%;
   margin-left: auto;
   margin-right: auto;
@@ -1433,3 +1433,31 @@ a .icon-linkedin:hover {
     page-break-inside: avoid;
   }
 }
+
+/* =================================================================
+   LIZ STYLES
+   Start of Liz's attempts to customize
+
+  ================================================================= */
+
+  .signup {
+    width: 35%;
+    display: block;
+    float: right;
+    margin-bottom: 2em;
+  }
+
+
+  .landing-img {
+    width: 60%;
+  }
+
+  .inside-stuff {
+    width: 60%;
+    display: block;
+    float: left;
+  }
+
+  .article {
+    overflow: hidden;
+  }
