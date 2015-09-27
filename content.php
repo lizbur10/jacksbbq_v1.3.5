@@ -15,8 +15,6 @@ if ( get_post_type() === 'events' ) {
 
 	<?php if ( is_front_page() ) : ?>
 		<div class="inside-stuff">
-	<?php else : ?>
-		<div>
 	<?php endif; 
 			  // Blog & Index Supporting Image ?>
 			<?php if ( ( is_home() || is_search() || is_archive() ) && !is_post_type_archive('events') && has_post_thumbnail() ) {
@@ -127,9 +125,9 @@ if ( get_post_type() === 'events' ) {
 				<p><?php echo $event_details['map']; ?></p>
 			</aside>
 		<?php endif; ?>
-	</div>
 
 <?php if ( is_front_page() ) : ?>
+	</div>
 
 	<div class="signup">
 	<!--Begin CTCT Sign-Up Form-->
