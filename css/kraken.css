@@ -1443,6 +1443,18 @@ a .icon-linkedin:hover {
   .signup {
     width: 36%;
     float: right;
+    margin-right: -2.5em;
+  }
+
+  /* Test selector */
+  .ctct-embed-signup .ctct-custom-form label {
+    margin-top: -10px;
+    margin-bottom: 8px;
+  }
+
+  .ctct-embed-signup .ctct-custom-form p > label {
+    margin-bottom: 8px;
+    margin-top: 8px;
   }
 
   .landing-img {
